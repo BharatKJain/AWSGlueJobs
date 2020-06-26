@@ -1,0 +1,29 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "b6c9ff45-f3f6-455a-be26-3f457b770ee0": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 470,
+                    "y": 90
+                },
+                "z": 0
+            }
+        }
+    },
+    "Resources": {
+        "HelloBucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {},
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "b6c9ff45-f3f6-455a-be26-3f457b770ee0"
+                }
+            }
+        }
+    }
+}
