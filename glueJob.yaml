@@ -1,0 +1,25 @@
+Metadata:
+    'AWS::CloudFormation::Designer':
+      8af2f432-c734-4d0b-9889-1fa86c677913:
+        size:
+          width: 60
+          height: 60
+        position:
+          x: -114.50000304232042
+          'y': -31.333334018786747
+        z: 0
+        embeds: []
+Resources:
+    MyJob:
+        Type: AWS::Glue::Job
+        Properties:
+        Command:
+            Name: pythonshell
+            ScriptLocation: "s3://codebaseawsglue/mainjob/main.py"
+        DefaultArguments:
+            "--job-bookmark-option": "job-bookmark-enable"
+        ExecutionProperty:
+            MaxConcurrentRuns: 2
+        MaxRetries: 0
+        Name: "cf-job1"
+        Role: "arn:aws:iam::120757162034:role/service-role/AWSGlueServiceRole-celebalwork_test"
