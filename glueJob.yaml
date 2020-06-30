@@ -13,13 +13,13 @@ Resources:
     AWSGlueJOb:
         Type: AWS::Glue::Job
         Properties:
-        Command:
-            Name: pythonshell
-            ScriptLocation: "s3://codebaseawsglue/mainjob/main.py"
-        DefaultArguments:
-            "--job-bookmark-option": "job-bookmark-enable"
-        ExecutionProperty:
-            MaxConcurrentRuns: 2
-        MaxRetries: 0
-        Name: "CICDeployment"
-        Role: "arn:aws:iam::120757162034:role/service-role/AWSGlueServiceRole-celebalwork_test"
+          Command:
+              Name: pythonshell
+              ScriptLocation: "s3://codebaseawsglue/mainjob/main.py"
+          DefaultArguments:
+              "--job-bookmark-option": "job-bookmark-enable"
+          ExecutionProperty:
+              MaxConcurrentRuns: 2
+          MaxRetries: 0
+          Name: "CICDeployment"
+          Role: "arn:aws:iam::120757162034:role/service-role/AWSGlueServiceRole-celebalwork_test"
