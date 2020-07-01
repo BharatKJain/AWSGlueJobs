@@ -10,7 +10,7 @@ Metadata:
         z: 0
         embeds: []
 Resources:
-    AWSGlueJOb:
+    AWSGlueJob:
         Type: AWS::Glue::Job
         Properties:
           Command:
